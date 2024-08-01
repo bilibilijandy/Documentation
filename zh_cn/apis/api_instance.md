@@ -1,12 +1,12 @@
-# Instance API
+# 实例 API
 
-## Instance List
+## 实例列表
 
 ```http
 GET /api/service/remote_service_instances
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -18,7 +18,7 @@ GET /api/service/remote_service_instances
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -32,13 +32,13 @@ GET /api/service/remote_service_instances
 }
 ```
 
-## Instance Detail
+## 实例详细信息
 
 ```http
 GET /api/instance
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -47,7 +47,7 @@ GET /api/instance
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -57,13 +57,13 @@ GET /api/instance
 }
 ```
 
-## Create
+## 创建
 
 ```http
 POST /api/instance
 ```
 
-##### Query Param
+##### 查询参数
 
 ```js
 {
@@ -71,11 +71,11 @@ POST /api/instance
 }
 ```
 
-##### Request Body
+##### 请求参数
 
 > [InstanceDetail](#type-of-instancedetail)
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -88,13 +88,13 @@ POST /api/instance
 }
 ```
 
-## Update Config
+## 更新设置
 
 ```http
 PUT /api/instance
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -103,11 +103,11 @@ PUT /api/instance
 }
 ```
 
-#### Request Body
+#### 请求参数
 
 > [InstanceConfig](#type-of-instanceconfig)
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -119,13 +119,13 @@ PUT /api/instance
 }
 ```
 
-## Delete
+## 删除
 
 ```http
 DELETE /api/instance
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -133,7 +133,7 @@ DELETE /api/instance
 }
 ```
 
-#### Request Body
+#### 请求参数
 
 ```json
 {
@@ -145,7 +145,7 @@ DELETE /api/instance
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -155,13 +155,13 @@ DELETE /api/instance
 }
 ```
 
-## Start
+## 启动
 
 ```http
 GET /api/protected_instance/open
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -170,7 +170,7 @@ GET /api/protected_instance/open
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -182,13 +182,13 @@ GET /api/protected_instance/open
 }
 ```
 
-## Stop
+## 停止
 
 ```http
 GET /api/protected_instance/stop
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -197,7 +197,7 @@ GET /api/protected_instance/stop
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -209,13 +209,13 @@ GET /api/protected_instance/stop
 }
 ```
 
-## Restart
+## 重启
 
 ```http
 GET /api/protected_instance/restart
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -224,7 +224,7 @@ GET /api/protected_instance/restart
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -242,7 +242,7 @@ GET /api/protected_instance/restart
 GET /api/protected_instance/kill
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -251,7 +251,7 @@ GET /api/protected_instance/kill
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -263,14 +263,14 @@ GET /api/protected_instance/kill
 }
 ```
 
-## Batch Operation
+## 批量操作
 Support operations: `start`, `stop`, `restart`, `kill`
 
 ```http
 POST /api/instance/multi_{{operations}}
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -279,7 +279,7 @@ POST /api/instance/multi_{{operations}}
 }[]
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -290,13 +290,13 @@ POST /api/instance/multi_{{operations}}
 ```
 
 
-## Update Instance
+## 更新实例
 
 ```http
 GET /api/protected_instance/asynchronous
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -306,7 +306,7 @@ GET /api/protected_instance/asynchronous
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -322,7 +322,7 @@ GET /api/protected_instance/asynchronous
 GET /api/protected_instance/command
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -332,7 +332,7 @@ GET /api/protected_instance/command
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -350,7 +350,7 @@ GET /api/protected_instance/command
 GET /api/protected_instance/outputlog
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -361,7 +361,7 @@ GET /api/protected_instance/outputlog
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
@@ -377,7 +377,7 @@ GET /api/protected_instance/outputlog
 POST /api/protected_instance/install_instance
 ```
 
-#### Query Param
+#### 查询参数
 
 ```js
 {
@@ -386,7 +386,7 @@ POST /api/protected_instance/install_instance
 }
 ```
 
-#### Request Body
+#### 请求参数
 
 ```json
 {
@@ -396,7 +396,7 @@ POST /api/protected_instance/install_instance
 }
 ```
 
-#### Response
+#### 响应
 
 ```json
 {
