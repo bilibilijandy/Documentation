@@ -73,7 +73,7 @@ POST /api/instance
 
 ##### 请求参数
 
-> [InstanceDetail](#type-of-instancedetail)
+> [InstanceConfig](#type-of-InstanceConfig)
 
 #### 响应
 
